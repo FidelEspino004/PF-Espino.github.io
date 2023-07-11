@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/39c1a62568.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/Ajustes.css">
+    <title>Ajustes | Show On</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- MENU LATERAL -->
+            <div class="col-lg-2 col-md-2 col-sm-2 col-12 menuLateral" id="menuLateral">
+                <nav class="menuLateral__nav">
+                    <a href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                    <a href="Guardados.html"><i class="fa-solid fa-bookmark"></i> Guardados</a>
+                    <a href="#"><i class="fa-solid fa-message"></i> Chats</a>
+                    <a href="#"><i class="fa-solid fa-users"></i> Seguidos</a>
+                    <hr>
+                    <a href="#"><i class="fa-solid fa-gear"></i> Ajustes</a>
+                </nav>
+            </div>
+            <main class="col-lg-10 col-md-10 col-sm-10 col-12 main">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main__titulo">Privacidad</h3>
+                        <form class="main__privacidad">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cbox1" value="first_checkbox">
+                                <label class="form-check-label" for="cbox1">Solo pueden enviar mensaje los usuarios que sigues</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="cbox2" value="second_checkbox">
+                                <label class="form-check-label" for="cbox2">Ocultar Seguidos</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main__titulo">Perfil</h3>
+                        <div class="main__perfil">
+                            <p><a href="IniciarSesion.html">Iniciar Sesion / Salir</a></p>
+                            <form class="main__perfil--form">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="cbox3" value="third_checkbox">
+                                    <label class="form-check-label" for="cbox3">Avisar de contenido sensible</label>
+                                </div>
+                            </form>
+                            <p>Roles:</p>
+                            <form class="main__perfil--roles">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol1" value="Direccion">
+                                    <label class="form-check-label" for="checkRol1">Director</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol2" value="DireccionDeFot">
+                                    <label class="form-check-label" for="checkRol2">Director de Fotografia</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol3" value="DireccionDeArte">
+                                    <label class="form-check-label" for="checkRol3">Director de Arte</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol4" value="AsistenteDeDir">
+                                    <label class="form-check-label" for="checkRol4">Asistente de Direccion</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol5" value="Guionista">
+                                    <label class="form-check-label" for="checkRol5">Guionista</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol6" value="Gaffer">
+                                    <label class="form-check-label" for="checkRol6">Gaffer</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol7" value="Actor">
+                                    <label class="form-check-label" for="checkRol7">Actor</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol8" value="OperadorDeCam">
+                                    <label class="form-check-label" for="checkRol8">Operador de cámara</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol9" value="Productor">
+                                    <label class="form-check-label" for="checkRol9">Productor</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="checkRol10" value="Sonidista">
+                                    <label class="form-check-label" for="checkRol10">Sonidista</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

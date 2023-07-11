@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/39c1a62568.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <title>Show On</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <!-- HEADER -->
+            <header class="header d-flex">
+                <div class="header__logo">
+                    <button type="button" class="header__logo--menu btn" id="btn_close"><i class="fa-solid fa-bars"></i></button>
+                    <span class="header__logo--logo"><a href="#">Show On</a></span>
+                </div>
+                <div class="header__busqueda">
+                    <input type="text" placeholder="Buscar">
+                    <button type="submit"><i class="fa-solid fa-search"></i></button>
+                </div>
+                <div class= "header__derecha">
+                    <a class="header__derecha--avatar" href="/html/Cuenta"><img src="/img/Perfil.png"></a>
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bell"></i></button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Notificaciones</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body"></div>
+                        </div>
+                </div>
+            </header>
+      <!-- MAIN -->
+
+      <main class="main">
+        <h3 class="main__titulo">Recomendados para ti</h3>
+        <div class="grid-videos">
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+            <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+        </div>
+        <h3 class="main__titulo">Mas Vistos</h3>
+        <div class="grid-videos">
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+        </div>
+        <h3 class="main__titulo">Ultimos</h3>
+        <div class="grid-videos">
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+                <a href="#" class="video"><img src="https://via.placeholder.com/500x281?text=Placeholder" alt=""></a>
+        </div>
+      </main>
+      <!-- MENU LATERAL -->
+      <div class="menuLateral" id="menuLateral">
+        <nav class="menuLateral__nav">
+          <a href="index.html"><i class="fa-solid fa-house"></i>  Inicio</a>
+          <a href="/html/Guardados.html"><i class="fa-solid fa-bookmark"></i>  Guardados</a>
+          <a href="#"><i class="fa-solid fa-message"></i>  Chats</a>
+          <a href="#"><i class="fa-solid fa-users"></i  >Seguidos</a>
+          <hr>
+          <a href="/html/Ajustes.html"><i class="fa-solid fa-gear"></i>Ajustes</a>
+        </nav>
+      </div>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="/JS/main.js"></script>
+</body>
+</html>
