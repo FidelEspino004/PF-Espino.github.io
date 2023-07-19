@@ -48,6 +48,10 @@ a {
           align-items: center;
 }
 
+.header a {
+  color: black;
+}
+
 .header .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -216,29 +220,36 @@ a {
 
 @media (max-width: 768px) {
   .contenedor {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 15% 70% 15%;
-        grid-template-rows: 15% 70% 15%;
+    height: 100vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 10% 85% 5%;
+        grid-template-rows: 10% 85% 5%;
         grid-template-areas: "header" "main" "menuLat";
   }
   .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    background-color: yellow;
+    color: black;
+    z-index: 200;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
   }
   .header .header__logo {
-    margin-bottom: 10px;
-  }
-  .header .header__logo--menu {
-    display: block;
+    display: none;
   }
   .header .header__busqueda {
     -webkit-box-pack: center;
@@ -250,20 +261,48 @@ a {
     display: -ms-flexbox;
     display: flex;
   }
+  .header .header__derecha .header__derecha--subir {
+    display: none;
+  }
+  .main {
+    margin-left: 0;
+  }
+  .main .grid-videos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .main .grid-videos .video {
+    margin-bottom: 20px;
+  }
   .menuLateral {
-    top: auto;
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: menuLat;
+    top: unset;
     bottom: 0;
     width: 100%;
     height: auto;
     position: fixed;
-    margin-top: 20px;
   }
   .menuLateral .menuLateral__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 5px;
+  }
+  .menuLateral .menuLateral__nav span {
+    display: none;
+  }
+  .menuLateral .menuLateral__nav hr {
+    display: none;
   }
   .menuLateral .menuLateral__nav a {
     padding: 5px;

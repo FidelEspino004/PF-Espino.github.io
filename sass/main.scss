@@ -36,6 +36,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	a {
+		color: black;
+	}
   
 	.header__logo {
 	  display: flex;
@@ -84,7 +88,7 @@
 	  display: flex;
 	  align-items: center;
 	  gap: 10px;
-  
+
 	  img {
 		width: 30px;
 		height: 30px;
@@ -102,8 +106,8 @@
 	position: fixed;
 	top: 75px;
 	bottom: 0;
-	width: 15%; // Ajustar el ancho a un 15%
-	overflow-y: auto; // Añadir scroll vertical
+	width: 15%; 
+	overflow-y: auto; 
   
 	.menuLateral__nav {
 	  display: flex;
@@ -179,11 +183,17 @@
 	height: 100vh;
   }
   
-  // Responsive
+
+
+
+
+  //------------------------------------------------------- Responsive-----------------------------------------------------------------------------
   @media (max-width: 768px) {
 	.contenedor {
-	  grid-template-columns: 1fr; 
-	  grid-template-rows: 15% 70% 15%;
+	  height: 100vh;
+	  display: grid;	
+	  grid-template-columns: 100%; 
+	  grid-template-rows: 10% 85% 5%;
 	  grid-template-areas:
 		"header"
 		"main"
@@ -191,16 +201,21 @@
 	}
   
 	.header {
-	  flex-direction: column;
-	  grid-area: header;
-	  align-items: flex-start;
+		background-color: yellow;
+		color: black;
+		z-index: 200;
+		grid-area: header;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		margin: 0;
+
   
 	  .header__logo {
-		margin-bottom: 10px;
-	  }
-  
-	  .header__logo--menu {
-		display: block;
+		display: none;
 	  }
   
 	  .header__busqueda {
@@ -208,21 +223,46 @@
 	  }
 	  .header__derecha {
 		display: flex;
+
+		.header__derecha--subir{
+			display: none;
+		}
 	  }
+	}
+
+	.main {
+		margin-left: 0;
+
+		.grid-videos {
+			grid-template-columns: 1fr;
+
+			.video {
+				margin-bottom: 20px;
+			}
+		}
 	}
   
 	.menuLateral {
-	  top: auto;
-	  bottom: 0;
-	  width: 100%;
-	  height: auto;
-	  position: fixed;
-	  margin-top: 20px;
+		grid-area: menuLat;
+		top:unset;
+		bottom: 0;
+		width: 100%;
+		height: auto;
+		position: fixed;
   
 	  .menuLateral__nav {
+		display: flex;
+		justify-content: center;
+		margin: 0;
 		flex-direction: row;
 		gap: 5px;
-  
+
+		span {
+			display: none;
+		}
+		hr {
+			display: none;
+		}
 		a {
 		  padding: 5px;
 		  font-size: 20px;
